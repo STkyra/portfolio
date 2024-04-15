@@ -1,0 +1,309 @@
+@font-face { 
+    font-family: "PP Eiko"; 
+    src: url("../Fonts/PPEiko-Regular.otf") format(OpenType);
+  } 
+@font-face {
+    font-family: "Solare";
+    src: url("../Fonts/Solare-Regular.otf") format(OpenType);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Solare";
+    src: url("../Fonts/Solare-MediumIntense.otf") format(OpenType);
+    font-weight: bold;
+}
+/* Responsive Queries */
+/* Large */
+@media screen and (max-width: 1200px){
+
+}
+/* Medium */
+@media screen and (max-width: 1024px){
+
+}
+/* Small */
+@media screen and (max-width: 768px){
+
+}
+/* Extra Small */
+@media screen and (max-width: 576px){
+
+}
+/* Device Queries */
+/* Large Devices */
+@media screen and (max-device-width: 1200px){
+
+}
+/* Medium Devices */
+@media screen and (max-device-width: 1024px){
+
+}
+/* Small Devices */
+@media screen and (max-device-width: 768px){
+
+}
+/* Extra Small Devices */
+@media screen and (max-device-width: 576px){
+    
+}
+body{
+    background-image: url('../Assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-size: 10px; 
+    font-family: "PP Eiko", sans-serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0;
+    text-align: right;
+}
+
+li {
+    color: rgba(95, 73, 69, 1);
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+li a {
+    font-family: "PP Eiko", sans-serif;
+    font-size: 20px;
+    color: rgba(95, 73, 69, 1);
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0px;
+    background: rgba(95, 73, 69, 1);
+    height: 1px; 
+    transition: right 0.3s ease-out; 
+}
+
+li:hover::after {
+    right: 0;
+}
+
+h2 {
+    font-family: "Solare", sans-serif;
+    font-size: 24px; 
+    text-align: center;
+    color: rgba(95, 73, 69, 1);
+}
+.name {
+    display: grid;
+    grid-template-rows: auto auto; /* Define two rows */
+    grid-template-columns: auto auto; /* Define two columns */
+    justify-content: center;
+    align-items: center;
+    column-gap: 1px; /* Gap between columns */
+    row-gap: 0; /* Remove gap between rows */
+    padding-bottom: 25px;
+    padding-top: 100px;
+}
+
+.kyra {
+    grid-row: 1; /* Place kyra in the first row */
+    grid-column: 1; /* Place kyra in the first column */
+    color: rgba(95, 73, 69, 1);
+    text-align: center;
+    font-family: 'Solare', sans-serif;
+    font-size: 150px;
+    line-height: 75%;
+    font-weight: normal;
+    text-align: left;
+}
+
+.van {
+    column-width: 1px;
+    grid-row: 1; /* Place van in the first row */
+    grid-column: 2; /* Place van in the second column */
+    color: rgba(95, 73, 69, 1);
+    text-align: left;
+    font-family: 'Solare', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+
+}
+
+.tongeren {
+    grid-row: 2; /* Place tongeren in the second row */
+    grid-column: 1 / span 2; /* Span across both columns */
+    color: rgba(95, 73, 69, 1);
+    text-align: center;
+    font-family: 'Solare', sans-serif;
+    font-size: 150px; /* Adjust font size as needed */
+    line-height: 20%;
+    font-weight: normal;
+}
+.grid-container {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto; /* Define three columns */
+    column-gap: 1px; /* Responsive gap based on viewport width */
+    row-gap: 2px;
+    padding: 10px; /* Responsive padding based on viewport width */
+}
+.item3 {
+    padding-top: 10px;
+    font-family: "PP Eiko", Helvetica;
+    color: rgba(95, 73, 69, 1);
+    font-size: 15px; /* Responsive font size based on viewport width */
+}
+.item4 {
+    font-family: "PP Eiko", Helvetica;
+    color: rgba(95, 73, 69, 1);
+    font-size: 15px; /* Responsive font size based on viewport width */
+}
+.IMG-line {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.IMG-edit {
+    padding: 0;
+    margin: 0;
+    width: 50%; /* Set width of IMG-edit */
+    box-shadow: 30px 15px 0 -1px #F8AC4B; /* Responsive box shadow based on viewport width */
+}
+.IMG-edit-2 {
+    padding: 0;
+    margin: 0;
+    width: 40%; /* Set width of IMG-edit-2 */
+    box-shadow: 25px -30px 0 -1px #F28974; /* Responsive box shadow based on viewport width */
+}
+/* Define the layout for the first row */
+.item1 {
+    grid-column: 1; /* Place IMG-edit at the start of the grid */
+    grid-row: 1; /* Place in the first row */
+}
+.item2 {
+    grid-column: 2; /* Place item2 next to IMG-edit */
+    grid-row: 1; /* Place in the first row */
+}
+.item3 {
+    grid-column: 3; /* Place item3 next to item2 */
+    grid-row: 1; /* Place in the first row */
+}
+/* Define the layout for the second row */
+.item4 {
+    grid-column: 1 / span 2; /* Place item4 at the start of the grid */
+    grid-row: 2; /* Place in the second row */
+}
+.item5 {
+    grid-column: 3; /* Place IMG-edit-2 next to item4 */
+    grid-row: 2; /* Place in the second row */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column-name {
+    display: flex;
+    align-content: space-between;
+    align-items: baseline;
+}
+.home-right {
+    display: grid;
+    column-gap: 50px 100px;
+}
+.grid-container {
+    display: grid;
+    column-gap: 50px 100px;
+}
+.right-container {
+    margin-top: 100px;
+    grid-template-rows: 100px;
+    display: grid;
+    justify-content: start;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#about {
+    font-family: "Solare", sans-serif;
+    font-weight: normal;
+    z-index: 1;
+    margin-left: 100px;
+}
+#me {
+    font-family: "Solare", sans-serif;
+    font-weight: normal;
+    z-index: 2;
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+#img-ab-1 {
+    width: 40%;
+}
+#img-ab-2 {
+    width: 40%;
+}
+#img-ab-3 {
+    width: 40%;
+}
+p {
+    font-size: 20px;
+    max-width: 1000px;
+    margin-left: 200px;
+    color: rgba(95, 73, 69, 1);
+}
+.column-1 {
+    grid-column: 3;
+}
+.column-2 {
+    grid-column: 4;
+    margin-left: 100px;
+}
+.column-3 {
+    grid-column: 3;
+}
+
+#my {
+    font-family: "Solare", sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    margin-right: 200px;
+}
+#work {
+    font-family: "Solare", sans-serif;
+    font-weight: bold;
+    z-index: 2;
+    margin: -15px 0 0 225px;
+}
+#home-img {
+    padding-left: 280px;
+    max-width: 150%;
+    max-height: 150%;
+}
