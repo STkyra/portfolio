@@ -71,6 +71,7 @@ h2 {
     grid-auto-rows: auto;
     row-gap: 100px;
     column-gap: 0;
+    padding-bottom: 100px;
 }
 
 p {
