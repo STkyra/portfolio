@@ -16,6 +16,10 @@ body {
     box-sizing: border-box;
 }
 
+.nav {
+    text-align: left;
+}
+
 .nav-list {
     position: fixed;
     float: right;
@@ -64,6 +68,23 @@ h2 {
     color: rgba(95, 73, 69, 1);
 }
 
+h3 {
+    font-weight: 800;
+    font-family: "Solare", sans-serif;
+    font-size: 50px;
+    text-align: left;
+    color: rgba(95, 73, 69, 1);
+}
+
+.line {
+    grid-column: 1;
+    align-self: center;
+    border-style: solid;
+    border-color: #5f4945;
+    border-width: 1px 0 0 0;
+    width: 800px;
+}
+
 .contentwrapper {
     justify-content: center;
     display: grid;
@@ -75,6 +96,7 @@ h2 {
 }
 
 p {
+    font-weight: 400;
     font-size: 25px;
     font-family: "PP Eiko", Helvetica;
     color: rgba(95, 73, 69, 1);
@@ -83,6 +105,7 @@ p {
 
 .text-left {
     grid-column: 1;
+    width: 50%;
 }
 
 .text-right {
