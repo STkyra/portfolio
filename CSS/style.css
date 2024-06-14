@@ -17,6 +17,8 @@ body {
 }
 
 .nav-list {
+    background-color: rgba(221, 188, 151, 1);
+    max-height: 100px;
     position: fixed;
     float: right;
     list-style-type: none;
@@ -142,6 +144,7 @@ p {
 }
 
 .box3 {
+    margin-top: -50px;
     grid-column: 3;
     padding-right: 100px;
     justify-content: flex-start;
