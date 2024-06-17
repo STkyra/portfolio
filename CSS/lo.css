@@ -16,18 +16,21 @@ body {
     box-sizing: border-box;
 }
 
-.navbar {
-    background-color: rgba(221, 188, 151, 1);
-    max-height: 100px;
-    position: fixed;
-    float: right;
-    list-style-type: none;
-    padding: 0;
+#navbar {
+    padding-left: 200px;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 200px;
+    height: auto;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbarlinks {
+    background-color: rgba(221, 188, 151, 0.9);
+    max-height: 100px;
+    list-style-type: none;
+    padding: 16px;
     margin: 0;
-    text-align: right;
-    z-index: 999;
 }
 
 .nav-list {
