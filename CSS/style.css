@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Solare";
-    src: url('../Fonts/Solare-MediumIntense.otf');
-    src: url('../Fonts/Solare-MediumIntense.otf') format('opentype');
+    src: url('../fonts/Solare-MediumIntense.otf');
+    src: url('../fonts/Solare-MediumIntense.otf') format('opentype');
     font-weight: medium;
 }
 
 @font-face {
     font-family: "Solare";
-    src: url('../Fonts/Solare-Regular.otf');
-    src: url('../Fonts/Solare-Regular.otf') format('opentype');
+    src: url('../fonts/Solare-Regular.otf');
+    src: url('../fonts/Solare-Regular.otf') format('opentype');
     font-weight: regular;
 }
 
 @font-face {
     font-family: "PP Eiko";
-    src: url('../Fonts/PPEiko-Regular..otf');
-    src: url('../Fonts/PPEiko-Regular.otf') format('opentype');
+    src: url('../fonts/PPEiko-Regular..otf');
+    src: url('../fonts/PPEiko-Regular.otf') format('opentype');
 }
 
 * {
@@ -24,7 +24,7 @@
 }
 
 body {
-    background-image: url('../Assets/background.jpg');
+    background-image: url('../assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
