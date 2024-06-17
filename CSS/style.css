@@ -7,13 +7,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 20px;
     font-size: 16px;
     font-family: "PP Eiko", sans-serif;
     box-sizing: border-box;
+}
+
+.flexcontainer{
+    padding:20px 200px;
 }
 
 .nav-list {
