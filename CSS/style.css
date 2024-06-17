@@ -1,4 +1,4 @@
-*{
+* {
     scrollbar-width: none;
 }
 
@@ -12,8 +12,8 @@ body {
     box-sizing: border-box;
 }
 
-.flexcontainer{
-    padding:20px 200px;
+.flexcontainer {
+    padding: 20px 200px;
 }
 
 #navbar {
@@ -55,8 +55,8 @@ body {
     right: 100%;
     bottom: 0px;
     background: rgba(95, 73, 69, 1);
-    height: 1px; 
-    transition: right 0.3s ease-out; 
+    height: 1px;
+    transition: right 0.3s ease-out;
 }
 
 .nav-link:hover::after {
@@ -65,7 +65,7 @@ body {
 
 h2 {
     font-family: "Solare", sans-serif;
-    font-size: 24px; 
+    font-size: 24px;
     text-align: center;
     color: rgba(95, 73, 69, 1);
 }
@@ -79,17 +79,17 @@ p {
 #name {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto; 
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
-    column-gap: 1px; 
-    row-gap: 0; 
+    column-gap: 1px;
+    row-gap: 0;
     padding-bottom: 100px;
     padding-top: 100px;
 }
 
 #kyra {
-    grid-row: 1; 
+    grid-row: 1;
     grid-column: 1;
     color: rgba(95, 73, 69, 1);
     text-align: center;
@@ -102,8 +102,8 @@ p {
 
 #van {
     column-width: 1px;
-    grid-row: 1; 
-    grid-column: 2; 
+    grid-row: 1;
+    grid-column: 2;
     color: rgba(95, 73, 69, 1);
     text-align: left;
     font-family: 'Solare', sans-serif;
@@ -112,12 +112,12 @@ p {
 }
 
 #tongeren {
-    grid-row: 2; 
+    grid-row: 2;
     grid-column: 1 / span 2;
     color: rgba(95, 73, 69, 1);
     text-align: center;
     font-family: 'Solare', sans-serif;
-    font-size: 150px; 
+    font-size: 150px;
     line-height: 20%;
     font-weight: normal;
 }
@@ -167,11 +167,11 @@ p {
     align-self: center;
     font-family: "PP Eiko", Helvetica;
     color: rgba(95, 73, 69, 1);
-    font-size: 25px; 
+    font-size: 25px;
 }
 
 .box5 {
-    
+
     width: 2fr;
     font-family: "PP Eiko", Helvetica;
     color: rgba(95, 73, 69, 1);
@@ -180,15 +180,15 @@ p {
 }
 
 .IMG-edit {
-    width: 70%; 
+    width: 70%;
     box-shadow: 30px 15px 0 1px #F8AC4B;
 }
 
 .IMG-edit-2 {
     width: 1fr;
     margin-left: 30px;
-    width: 70%; 
-    box-shadow: 25px 30px 0 1px #F28974; 
+    width: 70%;
+    box-shadow: 25px 30px 0 1px #F28974;
 }
 
 .box6 {
@@ -201,20 +201,21 @@ p {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
 
-  /* Make the first slide visible by default */
+/* Make the first slide visible by default */
 .containers:first-child {
     display: block;
-  }
-  
-  /* Make the images invisible by default */
-  .containers {
+}
+
+/* Make the images invisible by default */
+.containers {
     display: none;
-  }
-  
-  /* forward & Back buttons */
-  .back, .forward {
+}
+
+/* forward & Back buttons */
+.back,
+.forward {
     cursor: pointer;
     position: absolute;
     top: 43%;
@@ -226,19 +227,20 @@ p {
     transition: 0.4s ease;
     border-radius: 0 5px 5px 0;
     user-select: none;
-  }
-  
-  /* Place the "forward button" to the right */
-  .forward {
+}
+
+/* Place the "forward button" to the right */
+.forward {
     right: 0;
     border-radius: 4px 0 0 4px;
-  }
-  
-  /*when the user hovers,add a black background with some little opacity */
-  .back:hover, .forward:hover {
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.back:hover,
+.forward:hover {
     background-color: rgba(95, 73, 69, 0.1);
-  }
-  
+}
+
 
 
 /* The circles or bullets indicators */
@@ -252,42 +254,53 @@ p {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.5s ease;
-  }
-  
-  .enable, .dots:hover {
+}
+
+.enable,
+.dots:hover {
     background: linear-gradient(92.18deg, #5F4945 -25.78%, #5F4945 123.02%);
     opacity: 1;
-  }
-  
-  /* Faint animation */
-  .fade {
+}
+
+/* Faint animation */
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.4s;
     animation-name: fade;
     animation-duration: 1.4s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .5}
-    to {opacity: 2}
-  }
-  
-  @keyframes fade {
-    from {opacity: .5}
-    to {opacity: 2}
-  }
-  
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 2
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 2
+    }
+}
+
 #aboutme {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto auto; 
+    grid-template-columns: auto auto auto auto;
     justify-content: left;
     align-items: left;
     padding-top: 100px;
 }
 
 #about {
-    grid-row: 1; 
+    grid-row: 1;
     grid-column: 1;
     color: rgba(95, 73, 69, 1);
     text-align: center;
@@ -300,12 +313,12 @@ p {
 
 #me {
     padding-left: 300px;
-    grid-row: 2; 
+    grid-row: 2;
     grid-column: 1 / span 2;
     color: rgba(95, 73, 69, 1);
     text-align: center;
     font-family: 'Solare', sans-serif;
-    font-size: 150px; 
+    font-size: 150px;
     line-height: 20%;
     font-weight: normal;
 }
@@ -328,143 +341,189 @@ p {
     align-self: center;
     font-family: "PP Eiko", Helvetica;
     color: rgba(95, 73, 69, 1);
-    font-size: 25px; 
+    font-size: 25px;
 }
 
 #img-ab {
     width: 1fr;
     margin-left: 30px;
-    width: 70%; 
-    box-shadow: 25px 30px 0 1px #F28974; 
+    width: 70%;
+    box-shadow: 25px 30px 0 1px #F28974;
 }
 
 /* Device Queries */
 @media screen and (max-width: 576px) {
+
     /* Extra Small */
     body {
         font-size: 15px;
     }
+
     p {
         font-size: 15px;
     }
+
     #name {
         padding-top: 20px;
     }
+
     #kyra {
         font-size: 60px;
     }
+
     #van {
         font-size: 20px;
     }
+
     #tongeren {
         font-size: 60px;
     }
+
     .IMG-edit {
         box-shadow: 10px 7px 0 0 #F8AC4B;
     }
+
     .IMG-edit-2 {
         box-shadow: 7px 10px 0 0 #F28974;
     }
-    .box2{
+
+    .box2 {
         width: 50px;
     }
-    .box3, .box4, .box7 {
+
+    .box3,
+    .box4,
+    .box7 {
         font-size: 15px;
     }
+
     .containers {
         width: 25%;
     }
-    
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+
     /* Small */
     body {
         font-size: 18px;
     }
+
     p {
         font-size: 18px;
     }
+
     #name {
         padding-top: 40px;
     }
+
     #kyra {
         font-size: 80px;
     }
+
     #van {
         font-size: 25px;
     }
+
     #tongeren {
         font-size: 80px;
     }
-    .box2{
+
+    .box2 {
         width: 100px;
     }
-    .box3, .box4, .box7 {
+
+    .box3,
+    .box4,
+    .box7 {
         font-size: 18px;
     }
+
     .containers {
         width: 50%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
     /* Medium */
     body {
         font-size: 20px;
     }
+
     p {
         font-size: 20px;
     }
+
     #name {
         padding-top: 60px;
     }
+
     #kyra {
         font-size: 100px;
     }
+
     #van {
         font-size: 30px;
     }
+
     #tongeren {
         font-size: 100px;
     }
-    .box2{
+
+    .box2 {
         width: 150px;
     }
-    .box3, .box4, .box7 {
+
+    .box3,
+    .box4,
+    .box7 {
         font-size: 20px;
     }
+
     .containers {
         width: 75%;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+
     /* Large */
     body {
         font-size: 25px;
     }
+
     p {
         font-size: 25px;
     }
+
     #name {
         padding-top: 80px;
     }
+
     #kyra {
         font-size: 120px;
     }
+
     #van {
         font-size: 40px;
     }
+
     #tongeren {
         font-size: 120px;
     }
-    .box2{
+
+    .box2 {
         width: 200px;
     }
-    .box3, .box4, .box7 {
+
+    .box3,
+    .box4,
+    .box7 {
         font-size: 25px;
     }
+
     .containers {
         width: 100%;
     }
