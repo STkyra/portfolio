@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/lo.css">
+    <link rel="stylesheet" href="../Css/lo.css">
     <title>Development & version control</title>
 </head>
 
-<body class="flexcontainer">
+<body>
     <div id="navbar">
         <nav>
-            <ul class="navbarlinks">
+            <ul class="nav-list">
                 <li class="nav-link"><a class="nav-text" href="../index.html">Home</a></li>
                 <li class="nav-link"><a class="nav-text" href="interactivemedia.html">Interactive media</a></li>
                 <li class="nav-link"><a class="nav-text" href="devandversion.html">Dev & version</a></li>
@@ -21,74 +21,91 @@
             </ul>
         </nav>
     </div>
-    <h2>DEVELOPMENT &<br>
-        VERSION CONTROL
-    </h2>
+    <main class="flexcontainer">
 
-    <ul class="nav">
-        <li class="nav-link"><a class="nav-text" href="#pf">Portfolio</a></li>
-        <li class="nav-link"><a class="nav-text" href="#dev">Development</a></li>
-        <li class="nav-link"><a class="nav-text" href="#x">Project-x</a></li>
-        <li class="nav-link"><a class="nav-text" href="#bronnen">Bronnen</a></li>
-        <li class="nav-link"><a class="nav-text" href="#img">Afbeeldingen</a></li>
-    </ul>
+        <h2>DEVELOPMENT &<br>
+            VERSION CONTROL
+        </h2>
 
-    <section class="contentwrapper">
-        <div class="line"></div>
-        <h3 id="pf" class="text-left">
-            PORTFOLIO
-        </h3>
-        <p class="text-right">
-            Voor mijn portfolio heb ik html, css en javascript gebruikt. Ik heb een carousel gemaakt met de
-            leeruitkomsten. Hierin kan je klikken op de leeruitkomsten en dan ga je naar de pagina voor die
-            leeruitkomst.
+        <ul class="nav">
+            <li class="nav-link"><a class="nav-text" href="#pf">Portfolio</a></li>
+            <li class="nav-link"><a class="nav-text" href="#dev">Development</a></li>
+            <li class="nav-link"><a class="nav-text" href="#x">Project-x</a></li>
+            <li class="nav-link"><a class="nav-text" href="#bronnen">Bronnen</a></li>
+            <li class="nav-link"><a class="nav-text" href="#img">Afbeeldingen</a></li>
+        </ul>
 
-        </p>
-        <h3 id="dev" class="text-left">
-            PROJECT <br>
-            DEVELOPMENT
-        </h3>
-        <p class="text-right">
-            Dit project was een vervolg op het media campaign project. Ik heb de site gemaakt met de informatie die we
-            hadden verzameld van de studenten.
-            Hiervoor heb ik html, css en een beetje javascript gebruikt. Ik en Loes hebben feedback gevraagd aan maikel
-            voor de easter egg, hij heeft ons een beetje geholpen hiermee met ideeen.
-            Voor de javascript heb ik een beetje hulp gekregen van een medestudent, en html en css heb ik zelf
-            gedaan.<br><br>
-            Ook heb ik een smooth scroll toegevoegd aan de site zodat het er wat beter uitziet en over loopt.
-            Ik heb gekeken naar de feedback van de stakeholder en studenten en heb de site aangepast waar nodig. In de
-            code heb ik comments toegevoegd zodat het duidelijk is wat wat is.
-            Dit ook zodat als iemand anders de code zou lezen, dat diegene het ook snapt. Loes heeft ook een gitlab
-            repository aangemaakt en daar heb ik de code in gezet.
-        </p>
-        <h3 id="" class="text-left">
-            PROJECT-X
-        </h3>
-        <p class="text-right">
-
-        </p>
-    </section>
-    <div class="line"></div>
-    <section class="contentwrapper">
-        <h3 id="link" class="text-left">
-            BRONNEN
-        </h3>
-        <div id="spacer">
+        <section class="contentwrapper">
+            <div class="line"></div>
+            <h3 id="pf" class="text-left">
+                PORTFOLIO
+            </h3>
             <p class="text-right">
-                <a href="https://git.fhict.nl/I518175/development-ovp-website">gitlab development ovp</a>
-                <a href="https://stichtingfontys-my.sharepoint.com/personal/528977_student_fontys_nl/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F528977%5Fstudent%5Ffontys%5Fnl%2FDocuments%2Fsem2%2Dpf%2Fbewijsstukken&ga=1"></a><br>
-                <a href="https://stichtingfontys-my.sharepoint.com/personal/528977_student_fontys_nl/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F528977%5Fstudent%5Ffontys%5Fnl%2FDocuments%2Fsem2%2Dpf%2Fbewijsstukken&ga=1">Word
-                    documenten</a>
-            </p>
-        </div>
-        <h3 id="img" class="text-left">
-            AFBEELDINGEN
-        </h3>
-        <div class="text-right">
-            <img class="img" src="../Assets/LinkedIn.png">
-        </div>
-    </section>
+                Voor mijn portfolio heb ik html, css en javascript gebruikt. Ik heb een carousel gemaakt met javascript.
+                Hierin kan je klikken op de leeruitkomsten en dan ga je naar de pagina voor die
+                leeruitkomst. Ook heb ik een stikky navbar, dit heb ik gedaan met javascript. De javascript van de
+                sticky nav zit in een apparte js file om dit overzichtelijker te maken.
+                Verder heb ik nog drie css files, een voor de leeruitkomst pagina's, een voor de index pagina en een
+                voor de afbeeldingen. De afbeeldingen css file heb ik puur zodat ik een
+                gallerij kan maken, dit omdat alle afbeeldingen andere grootes zijn. Zo kan ik makkelijk alles aanpassen
+                zonder te veel te zoeken. <br><br>
+                Nattuurlijk heb ik een git voor mijn portfolio aangemaakt. Ik maak vaak grote commits, vandaar dat er
+                minder zijn. Verder heb ik ook in de css een smooth scroll toegevoegd zodat het beter scrollt. Ook voeg
+                ik comments toe aan de code zodat het duidelijk is wat wat is.
+                Dit ook zodat als iemand anders de code zou lezen, dat diegene het ook snapt.
 
+            </p>
+            <h3 id="dev" class="text-left">
+                PROJECT <br>
+                DEVELOPMENT
+            </h3>
+            <p class="text-right">
+                Dit project was een vervolg op het media campaign project. Ik heb de site gemaakt met de informatie die
+                we
+                hadden verzameld van de studenten.
+                Hiervoor heb ik html, css en een beetje javascript gebruikt. Ik en Loes hebben feedback gevraagd aan
+                maikel
+                voor de easter egg, hij heeft ons een beetje geholpen hiermee met ideeen.
+                Voor de javascript heb ik een beetje hulp gekregen van een medestudent, en html en css heb ik zelf
+                gedaan.<br><br>
+                Ook heb ik een smooth scroll toegevoegd aan de site zodat het er wat beter uitziet en over loopt.
+                Ik heb gekeken naar de feedback van de stakeholder en studenten en heb de site aangepast waar nodig. In
+                de
+                code heb ik comments toegevoegd zodat het duidelijk is wat wat is.
+                Dit ook zodat als iemand anders de code zou lezen, dat diegene het ook snapt. Loes heeft ook een gitlab
+                repository aangemaakt en daar heb ik de code in gezet.
+            </p>
+            <h3 id="" class="text-left">
+                PROJECT-X
+            </h3>
+            <p class="text-right">
+
+            </p>
+        </section>
+        <div class="line"></div>
+        <section class="contentwrapper">
+            <h3 id="link" class="text-left">
+                BRONNEN
+            </h3>
+            <div id="spacer">
+                <p class="text-right">
+                    <a href="https://git.fhict.nl/I518175/development-ovp-website">Gitlab development ovp</a>
+                    <a href="https://github.com/STkyra/portfolio">Github portfolio</a>
+                    <a
+                        href="https://stichtingfontys-my.sharepoint.com/personal/528977_student_fontys_nl/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F528977%5Fstudent%5Ffontys%5Fnl%2FDocuments%2Fsem2%2Dpf%2Fbewijsstukken&ga=1"></a><br>
+                    <a
+                        href="https://stichtingfontys-my.sharepoint.com/personal/528977_student_fontys_nl/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F528977%5Fstudent%5Ffontys%5Fnl%2FDocuments%2Fsem2%2Dpf%2Fbewijsstukken&ga=1">Word
+                        documenten</a>
+                </p>
+            </div>
+            <h3 id="img" class="text-left">
+                AFBEELDINGEN
+            </h3>
+            <div class="text-right">
+
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2020 Kyra van Tongeren</p>

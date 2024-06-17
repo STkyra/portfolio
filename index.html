@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css">
-  <script src="carousel.js"></script>
+  <link rel="stylesheet" href="Css/style.css">
+  <script src="Js/carousel.js"></script>
+  <script src="Js/navbar.js"></script>
   <title>Kyra van Tongeren</title>
 </head>
 
@@ -23,6 +24,8 @@
       </ul>
     </nav>
   </div>
+
+  
   <main class="flexcontainer">
     <section id="name">
       <div id="tongeren">
@@ -112,23 +115,8 @@
 
     <footer>
       <p>© 2020 Kyra van Tongeren</p>
-      <p><a href="mailto:528977.student.fontys.nl">k.vantongeren@student.fontys.nl</a></p>
+      <a href="mailto:528977.student.fontys.nl">k.vantongeren@student.fontys.nl</a>
     </footer>
-
-    <script>/* navbar script */
-      window.onscroll = function () { myFunction() };
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
   </main>
 </body>
 

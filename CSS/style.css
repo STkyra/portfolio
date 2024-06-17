@@ -1,5 +1,6 @@
 * {
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     padding-right: 200px;
     height: auto;
     position: fixed;
-    z-index: 9999;
+    z-index: 900;
 }
 
 .nav-list {
@@ -75,6 +76,12 @@ p {
     font-family: "PP Eiko", Helvetica;
     color: rgba(95, 73, 69, 1);
 }
+
+a:link {
+    color: rgba(95, 73, 69, 1);
+    font-size: 20px;
+}
+
 
 #name {
     display: grid;
