@@ -1,28 +1,39 @@
+// slidePosition is the current slide being displayed
 var slidePosition = 1;
+
+// Show the first slide when the page loads
 SlideShow(slidePosition);
 
-// Vooruit/terug controls
-function plusSlides(n) {
-  SlideShow(slidePosition += n);
+// This function is responsible for navigating forward or backward through the slides.
+function plusSlides(n) { // n is the number of slides to move forward or backward
+  SlideShow(slidePosition += n); // Call the SlideShow function with the updated slide position
 }
 
-// Afbeeldingen controls
-function currentSlide(n) {
-  SlideShow(slidePosition = n);
+// Image controls
+function currentSlide(n) { // n is the slide number to jump to
+  SlideShow(slidePosition = n); // Call the SlideShow function with the specified slide position
 }
 
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("containers"); // Haal alle elementen met class "containers" op
-  var circles = document.getElementsByClassName("dots"); // Haal alle elementen met class "dots" op
-  if (n > slides.length) { slidePosition = 1 } // Als de huidige positie groter is dan het aantal slides, ga naar de eerste slide
-  if (n < 1) { slidePosition = slides.length } // Als de huidige positie kleiner is dan 1, ga naar de laatste slide
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; // Verberg alle slides
+function SlideShow(n) { // n is the slide number to display
+  var i; // Declare a variable for iteration
+  var slides = document.getElementsByClassName("containers"); // Get all elements with class "containers
+  var circles = document.getElementsByClassName("dots"); // Get all elements with class "dots"
+  if (n > slides.length) { slidePosition = 1 } // If current position is greater than number of slides, go to first slide
+  if (n < 1) { slidePosition = slides.length } // If current position is less than 1, go to last slide
+  for (i = 0; i < slides.length; i++) { // Loop through all slides
+    slides[i].style.display = "none"; // Hide all slides
   }
-  for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(" enable", ""); // Verwijder de "enable" class van alle stippen
+  for (i = 0; i < circles.length; i++) { // Loop through all dots
+    circles[i].className = circles[i].className.replace(" enable", ""); // Remove "enable" class from all dots
   }
-  slides[slidePosition - 1].style.display = "block"; // Toon de huidige slide
-  circles[slidePosition - 1].className += " enable"; // Voeg de "enable" class toe aan de huidige stip
+  slides[slidePosition - 1].style.display = "block"; // Display the current slide
+  circles[slidePosition - 1].className += " enable"; // Add "enable" class to the current dot
 }
+
+
+
+// Explanation:
+//This JavaScript snippet controls a slideshow by managing slide display and navigation dots.It enables both forward and backward slide 
+//navigation(via the plusSlides function) and direct access to specific slides(through the currentSlide function).
+//The SlideShow function orchestrates slide display based on the slidePosition variable and updates the navigation dots accordingly.
+//Such functionality is often employed to create straightforward image sliders or carousels on websites.
